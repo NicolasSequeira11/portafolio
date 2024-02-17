@@ -150,13 +150,13 @@ export const Projects = ({ language, darkmode }) => {
             >
               <img 
                 src={darkmode === "false" ? item.logo : item.logoDark} 
-                className={`w-7/12 mx-auto my-6 h-[45px] object-contain ${
+                className={`w-7/12 mx-auto my-4 h-[45px] object-contain ${
                   hoveredIndex === index ? "translate-y-2 transition duration-75 ease-in" : "transition duration-75 ease-in"
                 }`}
               />
               <img 
                 src={hoveredIndex === index ? item.gif : item.img} 
-                className="flex w-10/12 mx-auto" 
+                className="flex w-10/12 mb-6 mx-auto" 
               />
               <div 
                 className={`mt-5 rounded-b-2xl flex flex-wrap 

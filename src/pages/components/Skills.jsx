@@ -99,7 +99,7 @@ export const Skills = ({ language, darkmode }) => {
       >
         {language ? "Habilidades" : "Skills"}
       </h2>
-      <div className="w-9/12 m-auto mt-14">
+      <div className="max-md:w-10/12 md:w-9/12 m-auto mt-14">
         <p 
           className={`font-bold md:text-xl ${darkmode === "false" ? "text-mydark" : "text-white"}`}>
             {language ? "Frontend y diseño" : "Frontend and design"}
@@ -123,7 +123,7 @@ export const Skills = ({ language, darkmode }) => {
         </div>
       </div>
 
-      <div className="w-9/12 m-auto mt-20">
+      <div className="max-md:w-10/12 md:w-9/12 m-auto mt-20">
         <p 
           className={`font-bold md:text-xl ${darkmode === "false" ? "text-mydark" : "text-white"}`}>
             {language ? "Backend y gestión de proyectos" : "Backend and project management"}
