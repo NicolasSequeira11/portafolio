@@ -12,7 +12,7 @@ export const Profile = ({ language, darkmode}) => {
       }
     >
       <p 
-        className="font-bold text-6xl mx-10 mt-36 max-sm:text-5xl text-center"
+        className="font-bold text-6xl mt-28 max-sm:text-5xl text-center"
       >
         {language ? "Desarrollador Frontend" : "Frontend Developer"}
       </p>
