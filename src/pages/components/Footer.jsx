@@ -1,5 +1,5 @@
 import React from "react";
-import LogoFooter from "../../media/logo-white-footer.png";
+import LogoFooter from "/media/logo-white-footer.png";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { AcmeLogo } from "../../AcmeLogo.jsx";
-import logoHorizontal from "../../media/logo-black-horizontal.png";
-import logoHorizontalDarkMode from "../../media/logo-white-horizontal.png";
+import logoHorizontal from "/media/logo-black-horizontal.png";
+import logoHorizontalDarkMode from "/media/logo-white-horizontal.png";
 import { PrincipalButton } from "../../components/Buttons.jsx";
 import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';

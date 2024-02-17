@@ -1,5 +1,5 @@
 import React from "react";
-import Photo from "../../media/photo.jpg";
+import Photo from "/media/photo.jpg";
 
 export const Profile = ({navigate, language, setLanguage, isDarkMode, setIsDarkMode, darkmode}) => {
   return(

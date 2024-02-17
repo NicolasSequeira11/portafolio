@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import CVEnglish from "../../media/cv-english.png";
-import CVSpanish from "../../media/cv-spanish.png";
+import CVEnglish from "/media/cv-english.png";
+import CVSpanish from "/media/cv-spanish.png";
 
 export const Curriculum = ({language, darkmode}) => {
   return(

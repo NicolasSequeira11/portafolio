@@ -4,6 +4,29 @@ import dataCertificates from "../../data/dataCertificates.json";
 
 export const Certificates = ({navigate, language, setLanguage, isDarkMode, setIsDarkMode, darkmode}) => {
 
+  const dataCertificates = [
+    {
+      "name": "Desarrollo Web - JAP",
+      "img": "./media/certifications/jap-fase2.png"
+    },
+    {
+      "name": "Desarrollo Web - CoderHouse",
+      "img": "./media/certifications/desarrollo.png"
+    },
+    {
+      "name": "Marketing Digital Avanzado - CoderHouse",
+      "img": "./media/certifications/marketing.png"
+    },
+    {
+      "name": "Marketing Digital Community Manager - CoderHouse",
+      "img": "./media/certifications/community.png"
+    },
+    {
+      "name": "Marketing Digital Growth - CoderHouse",
+      "img": "./media/certifications/growth.png"
+    }
+  ]
+
   return(
     <div className={`py-20 ${darkmode === "false" ? "bg-white" : "bg-firstDarkMode"}`} id="certificates">
       <h2 
