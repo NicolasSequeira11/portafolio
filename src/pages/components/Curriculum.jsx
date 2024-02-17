@@ -1,9 +1,8 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import CVEnglish from "/media/cv-english.png";
 import CVSpanish from "/media/cv-spanish.png";
 
-export const Curriculum = ({language, darkmode}) => {
+export const Curriculum = ({ language, darkmode }) => {
   return(
     <div className={`w-12/12 mx-auto max-md:pt-32 md:pt-40 max-md:pb-10 md:pb-20
     ${darkmode === "false" ? "bg-white" : "bg-firstDarkMode"}`

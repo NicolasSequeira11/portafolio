@@ -1,7 +1,7 @@
 import React from "react";
 import Photo from "/media/photo.jpg";
 
-export const Profile = ({navigate, language, setLanguage, isDarkMode, setIsDarkMode, darkmode}) => {
+export const Profile = ({ language, darkmode}) => {
   return(
     <div 
       id="profile" 

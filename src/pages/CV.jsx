@@ -2,7 +2,7 @@ import React from "react";
 import { Curriculum } from "./components/Curriculum";
 import { Footer } from "./components/Footer";
 
-export const CV = ({navigate, language, setLanguage, isDarkMode, setIsDarkMode, darkmode}) => {
+export const CV = ({ language, darkmode}) => {
   return(
     <div>
       <Curriculum darkmode={darkmode} language={language} />

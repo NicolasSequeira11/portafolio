@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Skills = ({navigate, language, setLanguage, isDarkMode, setIsDarkMode, darkmode}) => {
+export const Skills = ({ language, darkmode }) => {
 
   const dataSkills = {
     "front": [{

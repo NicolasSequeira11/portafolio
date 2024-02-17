@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { ModalImg } from "../../components/Modal";
-import dataCertificates from "../../data/dataCertificates.json";
 
-export const Certificates = ({navigate, language, setLanguage, isDarkMode, setIsDarkMode, darkmode}) => {
+export const Certificates = ({ language, darkmode }) => {
 
   const dataCertificates = [
     {

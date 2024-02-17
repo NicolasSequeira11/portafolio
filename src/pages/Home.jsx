@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React from "react";
 
 import { Profile } from './components/Profile';
 import { Presentation } from "./components/Presentation";
@@ -9,11 +8,12 @@ import { Contact } from './components/Contact';
 import { Certificates } from './components/Certificates';
 import { Footer } from './components/Footer';
 
-export const Home = ({navigate, language, setLanguage, isDarkMode, setIsDarkMode, darkmode}) => {
+export const Home = ({ language, darkmode }) => {
   return(
     <div>
       <Profile 
         darkmode={darkmode}
+        language={language}
       />
       <Presentation 
         darkmode={darkmode}
@@ -21,18 +21,23 @@ export const Home = ({navigate, language, setLanguage, isDarkMode, setIsDarkMode
       />
       <Skills 
         darkmode={darkmode}
+        language={language}
       />
       <Projects 
         darkmode={darkmode}
+        language={language}
       />
       <Contact 
         darkmode={darkmode}
+        language={language}
       />
       <Certificates 
         darkmode={darkmode}
+        language={language}
       />
       <Footer 
         darkmode={darkmode}
+        language={language}
       />
     </div>
   )

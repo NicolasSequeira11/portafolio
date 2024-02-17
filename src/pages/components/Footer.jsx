@@ -4,7 +4,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 
-export const Footer = ({navigate, language, setLanguage, isDarkMode, setIsDarkMode, darkmode}) => {
+export const Footer = ({ language, darkmode }) => {
   return(
     <footer className={`m-auto py-7 justify-center 
     ${darkmode === "false" 

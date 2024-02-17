@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { AcmeLogo } from "../../AcmeLogo.jsx";
 import logoHorizontal from "/media/logo-black-horizontal.png";
@@ -7,7 +7,7 @@ import { PrincipalButton } from "../../components/Buttons.jsx";
 import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 
-export const Nav = ({navigate, language, setLanguage, isDarkMode, setIsDarkMode, darkmode}) => {
+export const Nav = ({ language, setLanguage, setIsDarkMode, darkmode}) => {
   
   const handleLanguage = () => {
     setLanguage(prevLanguage => !prevLanguage);

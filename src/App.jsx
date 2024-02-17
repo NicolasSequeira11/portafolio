@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
 import { Route, Routes, HashRouter as BrowserRouter, useNavigate } from "react-router-dom";
 import { NextUIProvider } from '@nextui-org/react';
@@ -30,7 +29,6 @@ export const App = () => {
       <Nav
         language={language}
         setLanguage={setLanguage}
-        isDarkMode={isDarkMode}
         setIsDarkMode={setIsDarkMode}
         darkmode={darkmode}  
       />
@@ -39,90 +37,63 @@ export const App = () => {
         <Route 
           path="/" 
           element={<Home 
-            navigate={navigate} 
             language={language}
-            isDarkMode={isDarkMode}
-            setIsDarkMode={setIsDarkMode}
             darkmode={darkmode}
           />} 
         />
         <Route 
           path="/" 
           element={<Profile 
-            navigate={navigate} 
             language={language}
-            isDarkMode={isDarkMode}
-            setIsDarkMode={setIsDarkMode}
             darkmode={darkmode}
           />} 
         />
         <Route 
           path="/" 
           element={<Skills 
-            navigate={navigate} 
             language={language}
-            isDarkMode={isDarkMode}
-            setIsDarkMode={setIsDarkMode}
             darkmode={darkmode}
           />} 
         />
         <Route 
           path="/" 
           element={<Projects 
-            navigate={navigate} 
             language={language}
-            isDarkMode={isDarkMode}
-            setIsDarkMode={setIsDarkMode}
             darkmode={darkmode}
           />} 
         />
         <Route 
           path="/" 
           element={<Contact 
-            navigate={navigate} 
             language={language}
-            isDarkMode={isDarkMode}
-            setIsDarkMode={setIsDarkMode}
             darkmode={darkmode}
           />} 
         />
         <Route 
           path="/" 
           element={<Certificates 
-            navigate={navigate} 
             language={language}
-            isDarkMode={isDarkMode}
-            setIsDarkMode={setIsDarkMode}
             darkmode={darkmode}
           />} 
         />
         <Route 
           path="/" 
           element={<Footer 
-            navigate={navigate} 
             language={language}
-            isDarkMode={isDarkMode}
-            setIsDarkMode={setIsDarkMode}
             darkmode={darkmode}
           />} 
         />
         <Route 
           path="/curriculum" 
           element={<CV 
-            navigate={navigate} 
             language={language}
-            isDarkMode={isDarkMode}
-            setIsDarkMode={setIsDarkMode}
             darkmode={darkmode}  
           />} 
         />
         <Route 
           path="/" 
           element={<Curriculum 
-            navigate={navigate} 
             language={language}
-            isDarkMode={isDarkMode}
-            setIsDarkMode={setIsDarkMode}
             darkmode={darkmode}  
           />} 
         />

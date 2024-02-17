@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export const Projects = ({navigate, language, setLanguage, isDarkMode, setIsDarkMode, darkmode}) => {
+export const Projects = ({ language, darkmode }) => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const handleMouseEnter = (index) => {

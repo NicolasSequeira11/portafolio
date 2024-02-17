@@ -1,7 +1,7 @@
 import React from "react";
 import MessageIcon from '@mui/icons-material/Message';
 
-export const Contact = ({navigate, language, setLanguage, isDarkMode, setIsDarkMode, darkmode}) => {
+export const Contact = ({ language, darkmode }) => {
   return(
     <div className={`${darkmode === "false" ? "bg-white" : "bg-firstDarkMode"}`}>
       <div 
