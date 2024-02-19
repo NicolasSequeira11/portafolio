@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {Tooltip, Button} from "@nextui-org/react";
 
 export const Projects = ({ language, darkmode }) => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -20,12 +21,12 @@ export const Projects = ({ language, darkmode }) => {
       "gif":"./media/projects/mornar-gif.gif",
       "url": "https://nicolassequeira11.github.io/mornartcg/",
       "skills": [
-        "./media/skills-projects/react.png",
-        "./media/skills-projects/tailwind.png",
-        "./media/skills-projects/mui.png",
-        "./media/skills-projects/vite.png",
-        "./media/skills-projects/react-bootstrap.png",
-        "./media/skills-projects/api.png"
+        {name:"React", img:"./media/skills-projects/react.png"},
+        {name:"Tailwind", img:"./media/skills-projects/tailwind.png"},
+        {name:"Material UI", img:"./media/skills-projects/mui.png"},
+        {name:"Vite", img:"./media/skills-projects/vite.png"},
+        {name:"React-Bootstrap", img:"./media/skills-projects/react-bootstrap.png"},
+        {name:"API", img:"./media/skills-projects/api.png"}
       ]
     },
     {
@@ -36,12 +37,12 @@ export const Projects = ({ language, darkmode }) => {
       "gif":"./media/projects/jap-gif.gif",
       "url": "https://nicolassequeira11.github.io/53148269_proyecto-final-jap/login.html",
       "skills": [
-        "./media/skills-projects/html.png",
-        "./media/skills-projects/css.png",
-        "./media/skills-projects/js.png",
-        "./media/skills-projects/bootstrap.png",
-        "./media/skills-projects/api.png",
-        "./media/skills-projects/mariadb.png"    
+        {name:"HTML", img:"./media/skills-projects/html.png"},
+        {name:"CSS", img:"./media/skills-projects/css.png"},
+        {name:"Javascript", img:"./media/skills-projects/js.png"},
+        {name:"Bootstrap", img:"./media/skills-projects/bootstrap.png"},
+        {name:"API", img:"./media/skills-projects/api.png"},
+        {name:"MariaDB", img:"./media/skills-projects/mariadb.png" }   
       ]
     },
     {
@@ -52,12 +53,12 @@ export const Projects = ({ language, darkmode }) => {
       "gif":"./media/projects/legere-gif.gif",
       "url": "https://nicolassequeira11.github.io/Legere/",
       "skills": [
-        "./media/skills-projects/react.png",
-        "./media/skills-projects/node.png",
-        "./media/skills-projects/api.png",
-        "./media/skills-projects/css.png",
-        "./media/skills-projects/js.png",
-        "./media/skills-projects/bootstrap.png"
+        {name:"React", img:"./media/skills-projects/react.png"},
+        {name:"Node.js", img:"./media/skills-projects/node.png"},
+        {name:"API", img:"./media/skills-projects/api.png"},
+        {name:"CSS", img:"./media/skills-projects/css.png"},
+        {name:"Javascript", img:"./media/skills-projects/js.png"},
+        {name:"Bootstrap", img:"./media/skills-projects/bootstrap.png"}
       ]
     },
     {
@@ -68,12 +69,12 @@ export const Projects = ({ language, darkmode }) => {
       "gif":"./media/projects/bonvoyage-gif.gif",
       "url": "https://nicolassequeira11.github.io/bonvoyage/",
       "skills": [
-        "./media/skills-projects/api.png",
-        "./media/skills-projects/html.png",
-        "./media/skills-projects/css.png",
-        "./media/skills-projects/sass.png",
-        "./media/skills-projects/js.png",
-        "./media/skills-projects/bootstrap.png"
+        {name:"API", img:"./media/skills-projects/api.png"},
+        {name:"HTML", img:"./media/skills-projects/html.png"},
+        {name:"CSS", img:"./media/skills-projects/css.png"},
+        {name:"Sass", img:"./media/skills-projects/sass.png"},
+        {name:"Javascript", img:"./media/skills-projects/js.png"},
+        {name:"Bootstrap", img:"./media/skills-projects/bootstrap.png"},
       ]
     },
     {
@@ -84,12 +85,12 @@ export const Projects = ({ language, darkmode }) => {
       "gif":"./media/projects/wantan-gif.gif",
       "url": "https://nicolassequeira11.github.io/wantan/",
       "skills": [
-        "./media/skills-projects/html.png",
-        "./media/skills-projects/css.png",
-        "./media/skills-projects/sass.png",
-        "./media/skills-projects/js.png",
-        "./media/skills-projects/bootstrap.png",
-        "./media/skills-projects/photoshop.png"    
+        {name:"HTML", img:"./media/skills-projects/html.png"},
+        {name:"CSS", img:"./media/skills-projects/css.png"},
+        {name:"Sass", img:"./media/skills-projects/sass.png"},
+        {name:"Javascript", img:"./media/skills-projects/js.png"},
+        {name:"Bootstrap", img:"./media/skills-projects/bootstrap.png"},
+        {name:"Photoshop", img:"./media/skills-projects/photoshop.png"}   
       ]
     },
     {
@@ -100,12 +101,12 @@ export const Projects = ({ language, darkmode }) => {
       "gif":"./media/projects/veterinaria-gif.gif",
       "url": "https://nicolassequeira.000webhostapp.com/",
       "skills": [
-        "./media/skills-projects/html.png",
-        "./media/skills-projects/css.png",
-        "./media/skills-projects/sass.png",
-        "./media/skills-projects/js.png",
-        "./media/skills-projects/bootstrap.png",
-        "./media/skills-projects/photoshop.png"
+        {name:"HTML", img:"./media/skills-projects/html.png"},
+        {name:"CSS", img:"./media/skills-projects/css.png"},
+        {name:"Sass", img:"./media/skills-projects/sass.png"},
+        {name:"Javascript", img:"./media/skills-projects/js.png"},
+        {name:"Bootstrap", img:"./media/skills-projects/bootstrap.png"},
+        {name:"Photoshop", img:"./media/skills-projects/photoshop.png"}
       ]
     },
     {
@@ -116,12 +117,12 @@ export const Projects = ({ language, darkmode }) => {
       "gif":"./media/projects/peluqueria-gif.gif",
       "url": "https://nicolassequeira11.github.io/azul-estetica/",
       "skills": [
-        "./media/skills-projects/html.png",
-        "./media/skills-projects/css.png",
-        "./media/skills-projects/sass.png",
-        "./media/skills-projects/js.png",
-        "./media/skills-projects/bootstrap.png",
-        "./media/skills-projects/photoshop.png"
+        {name:"HTML", img:"./media/skills-projects/html.png"},
+        {name:"CSS", img:"./media/skills-projects/css.png"},
+        {name:"Sass", img:"./media/skills-projects/sass.png"},
+        {name:"Javascript", img:"./media/skills-projects/js.png"},
+        {name:"Bootstrap", img:"./media/skills-projects/bootstrap.png"},
+        {name:"Photoshop", img:"./media/skills-projects/photoshop.png"}
       ]
     }
   ]
@@ -167,10 +168,14 @@ export const Projects = ({ language, darkmode }) => {
               >
                 {item.skills.map((item, index) => (
                   <div className="w-1/6">
-                    <img 
-                      src={item} 
-                      className="w-10/12 mx-auto" 
-                    />
+                    <div className="flex gap-2">
+                      <Tooltip content={item.name} className="bg-lightblue text-white rounded-full">
+                          <img 
+                            src={item.img} 
+                            className="w-10/12 mx-auto" 
+                          />
+                      </Tooltip>
+                    </div>
                   </div>
                 ))}
               </div>
