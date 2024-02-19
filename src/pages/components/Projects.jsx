@@ -169,7 +169,10 @@ export const Projects = ({ language, darkmode }) => {
                 {item.skills.map((item, index) => (
                   <div className="w-1/6">
                     <div className="flex gap-2">
-                      <Tooltip content={item.name} className="bg-lightblue text-white rounded-full">
+                      <Tooltip 
+                        content={item.name} 
+                        className="bg-gradient-to-tr to-lightblue via-blue-800 from-darkblue text-white rounded-full"
+                      >
                           <img 
                             src={item.img} 
                             className="w-10/12 mx-auto" 
