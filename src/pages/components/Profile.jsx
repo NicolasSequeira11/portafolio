@@ -17,7 +17,7 @@ export const Profile = ({ language, darkmode}) => {
         {language ? "Desarrollador Frontend" : "Frontend Developer"}
       </p>
       <p 
-        className="mt-4 mb-14 text-xl mx-10 max-sm:text-2xl max-sm:px-3 text-center"
+        className="mt-4 mb-14 text-xl mx-10 max-sm:text-xl max-sm:px-3 text-center"
       >
         {language 
           ? "Construyendo experiencias, línea por línea." 
@@ -25,12 +25,13 @@ export const Profile = ({ language, darkmode}) => {
         }
       </p>
       <div 
-        className="max-sm:w-10/12 sm:w-8/12 md:w-6/12 lg:w-5/12 xl:w-3/12 my-6 mx-auto"
+        className="max-sm:w-10/12 sm:w-8/12 md:w-6/12 lg:w-5/12 xl:w-3/12 my-2 mx-auto"
       >
         <img 
           src={Photo} 
-          className="rounded-full w-[80%] m-auto" 
+          className="rounded-full w-[80%] m-auto mb-14" 
         />
+        <p className="mx-auto text-center">Montevideo, Uruguay -  26 años.</p>
       </div>
     </div>
   )
