@@ -29,6 +29,11 @@ export const Skills = ({ language, darkmode }) => {
         "imgDark": "./media/skills/javascript.png"
       },
       {
+        "name": "TypeScript",
+        "img": "./media/skills/typescript.png",
+        "imgDark": "./media/skills/typescript.png"
+      },
+      {
         "name": "sass",
         "img": "./media/skills/sass.png",
         "imgDark": "./media/skills/sass.png"

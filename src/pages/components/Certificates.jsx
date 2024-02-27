@@ -5,6 +5,10 @@ export const Certificates = ({ language, darkmode }) => {
 
   const dataCertificates = [
     {
+      "name": "TypeScript - Udemy",
+      "img": "./media/certifications/typescript-udemy.jpg"
+    },
+    {
       "name": "Desarrollo Web - JAP",
       "img": "./media/certifications/jap-fase2.png"
     },
