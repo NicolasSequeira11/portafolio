@@ -67,6 +67,11 @@ export const Skills = ({ language, darkmode }) => {
         "name": "Photoshop",
         "img": "./media/skills/photoshop.png",
         "imgDark": "./media/skills/photoshop.png"
+      },
+      {
+        "name": "Figma",
+        "img": "./media/skills/figma.png",
+        "imgDark": "./media/skills/figma.png"
       }
     ],
     "back": [{
