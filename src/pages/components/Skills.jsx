@@ -74,10 +74,16 @@ export const Skills = ({ language, darkmode }) => {
         "imgDark": "./media/skills/figma.png"
       }
     ],
-    "back": [{
+    "back": [
+      {
         "name": "API",
         "img": "./media/skills/api.png",
         "imgDark": "./media/skills/api.png"
+      },
+      {
+        "name": "Firebase",
+        "img": "./media/skills/firebase.png",
+        "imgDark": "./media/skills/firebase.png"
       },
       {
         "name": "GitHub",
