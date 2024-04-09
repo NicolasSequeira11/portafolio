@@ -5,14 +5,14 @@ export const Profile = ({ language, darkmode}) => {
   return(
     <div 
       id="profile" 
-      className={`w-12/12 mx-auto h-[100vh] text-white justify-center flex flex-col
+      className={`w-12/12 mx-auto max-md:h-[105vh] h-[100vh] text-white justify-center flex flex-col
       ${darkmode === "false" 
         ? "bg-gradient-to-tr to-lightblue via-blue-800 from-darkblue" 
         : "bg-gradient-to-tr to-secondDarkMode via-gray-700 from-firstDarkMode"}`
       }
     >
       <p 
-        className="font-bold text-6xl max-md:mt-28 md:mt-36 max-sm:text-5xl text-center"
+        className="font-bold text-6xl max-md:mt-[10rem] md:mt-36 max-sm:text-[2.7rem] text-center"
       >
         {language ? "Desarrollador Frontend" : "Frontend Developer"}
       </p>
