@@ -11,7 +11,7 @@ export const Skills = () => {
   return(
     <div 
       id="skills" 
-      className={`mx-auto md:w-12/12
+      className={`mx-auto md:w-12/12 max-md:pt-12
         ${darkmode === "false" ? "bg-white" : "bg-firstDarkMode"}`}
     >
       <h2 
