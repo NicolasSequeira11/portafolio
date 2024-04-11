@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AcmeLogo } from "../../AcmeLogo.jsx";
 import logoHorizontal from "/media/logo-black-horizontal.png";
@@ -7,25 +7,19 @@ import { PrincipalButton } from "../../components/Buttons.jsx";
 import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 
-export const Nav = ({ language, setLanguage, setIsDarkMode, darkmode}) => {
-  
-  const handleLanguage = () => {
-    setLanguage(prevLanguage => !prevLanguage);
-  }
+// Context
+import { DarkModeContext } from "../../context/DarkModeContext.jsx";
+import { LanguageContext } from "../../context/LanguageContext.jsx";
 
+export const Nav = () => {
+  const { handleDarkMode, darkmode } = useContext(DarkModeContext);
+  const { language, handleLanguage } = useContext(LanguageContext);
+  
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
-  };
-
-  const handleDarkMode = () => {
-    setIsDarkMode(prevIsDarkMode => {
-      const newIsDarkMode = !prevIsDarkMode;
-      localStorage.setItem("darkmodeNS", JSON.stringify(newIsDarkMode));
-      return newIsDarkMode;
-    });
   };
 
   const menuItems = [

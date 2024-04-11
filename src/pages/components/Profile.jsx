@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import Photo from "/media/photo.jpg";
 
-export const Profile = ({ language, darkmode}) => {
+import { DarkModeContext } from "../../context/DarkModeContext";
+import { LanguageContext } from "../../context/LanguageContext";
+
+export const Profile = () => {
+  const { darkmode } = useContext(DarkModeContext);
+  const { language } = useContext(LanguageContext);
+
   return(
     <div 
       id="profile" 
@@ -31,7 +37,9 @@ export const Profile = ({ language, darkmode}) => {
           src={Photo} 
           className="rounded-full w-[80%] m-auto mb-14" 
         />
-        <p className="mx-auto text-center">Montevideo, Uruguay -  26 años.</p>
+        <p className="mx-auto text-center">
+          Montevideo, Uruguay -  26 años.
+        </p>
       </div>
     </div>
   )

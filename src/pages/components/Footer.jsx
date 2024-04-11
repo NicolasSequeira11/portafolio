@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import LogoFooter from "/media/logo-white-footer.png";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 
-export const Footer = ({ language, darkmode }) => {
+import { DarkModeContext } from "../../context/DarkModeContext";
+import { LanguageContext } from "../../context/LanguageContext";
+
+export const Footer = () => {
+  const { darkmode } = useContext(DarkModeContext);
+  const { language } = useContext(LanguageContext);
+
   return(
     <footer className={`m-auto py-7 justify-center 
     ${darkmode === "false" 

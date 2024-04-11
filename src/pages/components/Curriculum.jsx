@@ -1,12 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import { PdfDownloadButton } from "../../components/Buttons";
 import CVEnglish from "/media/cv-english.png";
 import CVEnglishPDF from "/media/cv-english-nicolas-sequeira-front-developer.pdf";
 
-export const Curriculum = ({ language, darkmode }) => {
+import { DarkModeContext } from "../../context/DarkModeContext";
+import { LanguageContext } from "../../context/LanguageContext";
+
+export const Curriculum = () => {
+  const { darkmode } = useContext(DarkModeContext);
+  const { language } = useContext(LanguageContext);
+
   return(
-    <div className={`w-12/12 mx-auto max-md:pt-32 md:pt-40 max-md:pb-10 md:pb-20
-    ${darkmode === "false" ? "bg-white" : "bg-firstDarkMode"}`
+    <div 
+      className={`w-12/12 mx-auto max-md:pt-32 md:pt-40 max-md:pb-10 md:pb-20
+        ${darkmode === "false" ? "bg-white" : "bg-firstDarkMode"}`
     }>
       <div className="m-auto text-center">
         <img 
