@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { DarkModeContext } from "../../context/DarkModeContext";
 import { LanguageContext } from "../../context/LanguageContext";
 

@@ -1,5 +1,9 @@
 export const dataCertificates = [
   {
+    "name": "React - CoderHouse",
+    "img": "./media/certifications/coder-react.png"
+  },
+  {
     "name": "TypeScript - Udemy",
     "img": "./media/certifications/typescript-udemy.jpg"
   },
