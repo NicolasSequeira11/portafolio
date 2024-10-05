@@ -11,15 +11,40 @@ export const Presentation = () => {
       className={`mx-auto md:w-12/12 py-14  
         ${darkmode === "false" ? "bg-white" : "bg-firstDarkMode"}`}
     >
-      <p 
-        className={`text-center font-semibold text-xl mx-auto max-md:w-10/12 max-md:text-justify md:w-9/12 
-          ${darkmode === "false" ? "text-mydark" : "text-fourthDarkMode"}`}
+      <div
+        className={`text-justify text-xl mx-auto
+          max-md:w-10/12 max-md:text-justify md:w-9/12 
+            ${darkmode === "false" ? "text-mydark" : "text-fourthDarkMode"}`}
       >
-        {language 
-          ? "Comencé en el desarrollo front hace más de 1 año y medio, desde entonces no he dejado de estudiar y practicar. Estoy comprometido en compartir mis conocimientos y mejorar cada día." 
-          : "I started in front-end development more than 1 year a half ago and since then I have not stopped studying and practicing. I am committed to share my knowledge and improve every day."
-        }
-      </p>
+        <p>
+          {language 
+            ? "Desarrollador frontend con 2 años de experiencia, especializado en React, Tailwind y Typescript." 
+            : "Frontend developer with 2 years of experience, specialized in React, Tailwind, and Typescript."
+          }
+        </p>
+        <p className="mt-5">
+          {language 
+            ? "Actualmente, colaboro con AWAQ ONGD, donde trabajo en estrecha coordinación con el equipo de backend y diseño, asegurando que cada proyecto se ejecute con precisión y eficiencia."
+            : "Currently, I collaborate with AWAQ ONGD, working closely with the backend and design teams to ensure that each project is executed with precision and efficiency."
+          }
+        </p>
+        <p className="mt-5">
+          {language 
+            ? "Tengo experiencia en la implementación de diseños de Figma, garantizando que cada detalle se refleje fielmente en el código."
+            : "I have experience in the implementation of Figma designs, ensuring that every detail is accurately reflected in the code."
+          }
+        </p>
+        <p className="mt-5">
+          {language 
+            ? "Me defino por mi responsabilidad, compromiso y atención al detalle, cualidades que aplico en cada etapa del desarrollo para cumplir con los objetivos de la mejor manera posible."
+            : "I am defined by my responsibility, commitment, and attention to detail, qualities that I apply at every stage of development to achieve goals in the best possible way."
+          }
+        </p>
+      </div>
+      
+      <hr className={`border-b-1 mt-14 
+        ${darkmode === "false" ? "border-mydark" : "border-thirdDarkMode" }`}>
+      </hr>
     </div>
   )
 }

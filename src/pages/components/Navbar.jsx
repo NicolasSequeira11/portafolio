@@ -75,7 +75,7 @@ export const Nav = () => {
           </div>
           <div className="w-1/4 my-auto flex justify-end">
             <div className="flex my-auto w-fit">
-              <div className="justify-end ms-2 flex w-full">
+              {/* <div className="justify-end ms-2 flex w-full">
                 <Link to="/curriculum">
                   <PrincipalButton 
                     text="CV" 
@@ -84,12 +84,14 @@ export const Nav = () => {
                     background="bg-gradient-to-tr to-lightblue via-blue-800 from-darkblue" 
                   />
                 </Link>
-              </div>
+              </div> */}
               <div className="justify-end ms-2 flex w-full">
                 <PrincipalButton 
                   text={language ? "ES" : "EN"} 
-                  textColor={`font-semibold ${darkmode === "false" ? "text-myblack" : "bg-thirdDarkMode text-white"}`} 
-                  shadow="shadow-md hover:shadow-lg" 
+                  textColor={`font-semibold 
+                    ${darkmode === "false" ? "text-white" : "bg-thirdDarkMode text-white"}`
+                  } 
+                  shadow="shadow-md hover:shadow-lg bg-gradient-to-tr to-lightblue via-blue-800 from-darkblue" 
                   onClick={handleLanguage}
                 />
               </div>

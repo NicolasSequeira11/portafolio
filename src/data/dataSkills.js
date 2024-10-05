@@ -10,6 +10,26 @@ export const dataSkills = {
       "imgDark": "./media/skills/tailwind.png"
     },
     {
+      "name": "TypeScript",
+      "img": "./media/skills/typescript.png",
+      "imgDark": "./media/skills/typescript.png"
+    },
+    {
+      "name": "Figma",
+      "img": "./media/skills/figma.png",
+      "imgDark": "./media/skills/figma.png"
+    },
+    {
+      "name": "GitHub",
+      "img": "./media/skills/github.png",
+      "imgDark": "./media/skills/github-darkmode.png"
+    },
+    {
+      "name": "Trello",
+      "img": "./media/skills/trello.png",
+      "imgDark": "./media/skills/trello.png"
+    },
+    {
       "name": "HTML",
       "img": "./media/skills/html.png",
       "imgDark": "./media/skills/html.png"
@@ -25,9 +45,9 @@ export const dataSkills = {
       "imgDark": "./media/skills/javascript.png"
     },
     {
-      "name": "TypeScript",
-      "img": "./media/skills/typescript.png",
-      "imgDark": "./media/skills/typescript.png"
+      "name": "API",
+      "img": "./media/skills/api.png",
+      "imgDark": "./media/skills/api.png"
     },
     {
       "name": "sass",
@@ -55,6 +75,11 @@ export const dataSkills = {
       "imgDark": "./media/skills/nextui-darkmode.png"
     },
     {
+      "name": "Cloudflare",
+      "img": "./media/skills/cloudflare.png",
+      "imgDark": "./media/skills/cloudflare.png"
+    },
+    {
       "name": "Vite",
       "img": "./media/skills/vite.png",
       "imgDark": "./media/skills/vite.png"
@@ -64,42 +89,5 @@ export const dataSkills = {
       "img": "./media/skills/photoshop.png",
       "imgDark": "./media/skills/photoshop.png"
     },
-    {
-      "name": "Figma",
-      "img": "./media/skills/figma.png",
-      "imgDark": "./media/skills/figma.png"
-    }
-  ],
-  "back": [
-    {
-      "name": "API",
-      "img": "./media/skills/api.png",
-      "imgDark": "./media/skills/api.png"
-    },
-    {
-      "name": "Firebase",
-      "img": "./media/skills/firebase.png",
-      "imgDark": "./media/skills/firebase.png"
-    },
-    {
-      "name": "GitHub",
-      "img": "./media/skills/github.png",
-      "imgDark": "./media/skills/github-darkmode.png"
-    },
-    {
-      "name": "Node.js",
-      "img": "./media/skills/nodejs.png",
-      "imgDark": "./media/skills/nodejs-darkmode.png"
-    },
-    {
-      "name": "Trello",
-      "img": "./media/skills/trello.png",
-      "imgDark": "./media/skills/trello.png"
-    },
-    {
-      "name": "MariaDB",
-      "img": "./media/skills/mariadb.png",
-      "imgDark": "./media/skills/mariadb-darkmode.png"
-    }
   ]
 }
