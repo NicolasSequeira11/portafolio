@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AcmeLogo } from "../../AcmeLogo.jsx";
 import logoHorizontal from "/media/logo-black-horizontal.png";
@@ -30,8 +30,8 @@ export const Nav = () => {
   ];
 
   return (
-    <header className="sticky top-10 w-full x z-10">
-      <div className={`m-auto py-4 px-7 left-0 right-0 absolute md:shadow-md md:rounded-full flex md:w-10/12 
+    <header className="sticky top-0 w-full x z-10">
+      <div className={`m-auto py-4 px-7 md:shadow-md flex 
         ${darkmode === "false" ? "bg-white" : "bg-secondDarkMode" }`}
       >
         {/* Logo */}
@@ -48,7 +48,7 @@ export const Nav = () => {
         {/* Links */}
         <div className="m-auto flex w-2/4 justify-center">
           {/* Links de navegación */}
-            <Link 
+            {/* <Link 
               to="/"
               className={`font-semibold hidden xl:flex w-fit cursor-pointer" 
                 ${darkmode === "false" 
@@ -57,21 +57,23 @@ export const Nav = () => {
                 }
             >
               {language ? "Inicio" : "Home"}
-            </Link>
-          {menuItems.map((item, index) => (
-            <div key={index} className="flex m-auto cursor-pointer">
-              <a
-                onClick={() => scrollToSection(item.target)}
-                className={`font-semibold hidden xl:flex 
-                  ${darkmode === "false" 
-                    ? "hover:text-blue-800 text-myblack m-auto" 
-                    : "text-white hover:text-fourthDarkMode"}`
-                  }
-              >
-                {language ? item.nameES : item.nameEN}
-              </a>
+            </Link> */}
+          <div className="grid grid-cols-4 gap-12">
+            {menuItems.map((item, index) => (
+              <div key={index} className="flex m-auto cursor-pointer">
+                <a
+                  onClick={() => scrollToSection(item.target)}
+                  className={`font-semibold hidden xl:flex
+                    ${darkmode === "false" 
+                      ? "hover:text-blue-800 text-myblack m-auto" 
+                      : "text-white hover:text-fourthDarkMode"}`
+                    }
+                >
+                  {language ? item.nameES : item.nameEN}
+                </a>
+              </div>
+            ))}
             </div>
-          ))}
           </div>
           <div className="w-1/4 my-auto flex justify-end">
             <div className="flex my-auto w-fit">

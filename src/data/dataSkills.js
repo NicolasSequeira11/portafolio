@@ -59,31 +59,31 @@ export const dataSkills = {
       "img": "./media/skills/bootstrap.png",
       "imgDark": "./media/skills/bootstrap.png"
     },
-    {
-      "name": "React Bootstrap",
-      "img": "./media/skills/react-bootstrap.png",
-      "imgDark": "./media/skills/react-bootstrap.png"
-    },
-    {
-      "name": "Material UI",
-      "img": "./media/skills/mui.png",
-      "imgDark": "./media/skills/mui.png"
-    },
-    {
-      "name": "NextUI",
-      "img": "./media/skills/nextui.png",
-      "imgDark": "./media/skills/nextui-darkmode.png"
-    },
+    // {
+    //   "name": "React Bootstrap",
+    //   "img": "./media/skills/react-bootstrap.png",
+    //   "imgDark": "./media/skills/react-bootstrap.png"
+    // },
+    // {
+    //   "name": "Material UI",
+    //   "img": "./media/skills/mui.png",
+    //   "imgDark": "./media/skills/mui.png"
+    // },
+    // {
+    //   "name": "NextUI",
+    //   "img": "./media/skills/nextui.png",
+    //   "imgDark": "./media/skills/nextui-darkmode.png"
+    // },
     {
       "name": "Cloudflare",
       "img": "./media/skills/cloudflare.png",
       "imgDark": "./media/skills/cloudflare.png"
     },
-    {
-      "name": "Vite",
-      "img": "./media/skills/vite.png",
-      "imgDark": "./media/skills/vite.png"
-    },
+    // {
+    //   "name": "Vite",
+    //   "img": "./media/skills/vite.png",
+    //   "imgDark": "./media/skills/vite.png"
+    // },
     {
       "name": "Photoshop",
       "img": "./media/skills/photoshop.png",

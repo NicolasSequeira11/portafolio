@@ -1,15 +1,13 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import LogoFooter from "/media/logo-white-footer.png";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 
 import { DarkModeContext } from "../../context/DarkModeContext";
-import { LanguageContext } from "../../context/LanguageContext";
 
 export const Footer = () => {
   const { darkmode } = useContext(DarkModeContext);
-  const { language } = useContext(LanguageContext);
 
   return(
     <footer className={`m-auto py-7 justify-center 
@@ -19,10 +17,10 @@ export const Footer = () => {
     }
     >
       <img src={LogoFooter} className="m-auto h-44" />
-      <p 
+      {/* <p 
         className="text-white text-lg text-center font-semibold py-8">
           {language ? "Constancia y determinación." : "Consistency and determination"}
-      </p>
+      </p> */}
       <div className="m-auto flex justify-center my-5 text-center text-white">
         <a 
           href="https://www.linkedin.com/in/nicolas-sequeira-dev/"

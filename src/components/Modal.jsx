@@ -1,5 +1,4 @@
-import React from "react";
-import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure} from "@nextui-org/react";
+import {Modal, ModalContent, ModalBody, Button, useDisclosure} from "@nextui-org/react";
 
 export const ModalImg = ({keyImg, img}) => {
   const {isOpen, onOpen, onOpenChange} = useDisclosure();
@@ -11,7 +10,7 @@ export const ModalImg = ({keyImg, img}) => {
           <img src={img} className="drop-shadow-md object-cover opacity-90 hover:opacity-100 cursor-pointer" />
         </div>
       </Button>
-      <Modal isOpen={isOpen} size="4xl" onOpenChange={onOpenChange}>
+      <Modal isOpen={isOpen} size="3xl" onOpenChange={onOpenChange}>
         <ModalContent className="m-auto max-sm:pb-[30%]">
           {(onClose) => (
             <>
