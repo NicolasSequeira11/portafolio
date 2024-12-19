@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ModalImg } from "../../components/Modal";
+// import { ModalImg } from "../../components/Modal";
 import { dataCertificates } from "../../data/dataCertificates";
 
 import { DarkModeContext } from "../../context/DarkModeContext";
@@ -22,10 +22,16 @@ export const Certificates = () => {
           {language ? "CERTIFICADOS" : "CERTIFICATES"}
         </h2>
         <div 
-          className="flex flex-wrap my-6 w-10/12 mx-auto"
+          className="grid max-sm:grid-cols-1 max-lg:grid-cols-2 grid-cols-3 gap-5 my-6 w-10/12 mx-auto"
         >
           {dataCertificates.map((item, index) => (
-            <ModalImg keyImg={index} img={item.img} key={index} />
+            <div key={index}>
+              <img 
+                src={item.img} 
+                alt={item.name}
+                className="flex h-full object-contain" 
+              />
+            </div>
           ))}
         </div>
       </div>

@@ -12,7 +12,7 @@ export const Profile = () => {
     <div 
       id="profile" 
       className={`w-12/12 mx-auto text-white 
-        justify-center flex flex-col
+        justify-center flex flex-col max-md:h-[75vh]
       ${darkmode === "false" 
         ? "bg-gradient-to-tr to-lightblue via-blue-800 from-darkblue" 
         : "bg-gradient-to-tr to-secondDarkMode via-gray-700 from-firstDarkMode"}`
